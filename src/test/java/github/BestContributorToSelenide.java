@@ -3,8 +3,6 @@ package github;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selectors;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -19,7 +17,6 @@ public class BestContributorToSelenide {
                 .closest(".BorderGrid-cell").$$("ul li").first().hover();
         $$(".Popover").findBy(visible).shouldHave(Condition.text("Andrei Solntsev"));
         sleep(6000);
-
 
     }
 }

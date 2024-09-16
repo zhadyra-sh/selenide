@@ -30,7 +30,6 @@ public class SelenideRepositorySearch {
                 .findBy(text("selenide/selenide"))
                 .$("a")
                 .click();
-
         // Ожидание для проверки
         sleep(5000);
         //проверка слово selenide
