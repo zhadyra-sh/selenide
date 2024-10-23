@@ -11,7 +11,6 @@ public class SelenideHomeWorkTest {
         $("#wiki-tab").click();
         $$("a").findBy(Condition.text("Soft assertions")).click();
         $("div.markdown-body").shouldHave(Condition.text("JUnit5"));
-        sleep(5000);
 
     }
 }
